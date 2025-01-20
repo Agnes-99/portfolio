@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio website showcasing my work">
+  <title> Agnes Mabusela | Portfolio</title>
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  
+  <!-- FontAwesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="logo">Agnes Mabusela</div>
+    
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="path/to/your-cv.pdf" download class="download-btn">Download My CV</a></li>
+    </ul>
+
+    <div class="social-links">
+        <a href="mailto:agnesmabusela12@gmail.com" target="_blank" class="social-icon">
+            <i class="fas fa-envelope"></i>
+          </a> 
+        <a href="https://www.linkedin.com/in/agnes-mabusela-29bb79288/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Agnes-99" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>         
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section" data-aos="fade-in">
+    <div class ="particles-container"></div>
+    <div class="intro-text">
+      <h1>
+        <span class="word word-3">console.log("Welcome to my world!");</span>
+      </h1>
+      <a href="#about" class="btn">Learn More About Me</a>
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section id="about" class="about-section" data-aos="fade-up" data-aos-delay="100">
+    <div class="container">
+      <h1><img src=".\assets\images\memoji.jpg" alt="Memoji" class="memoji"></h1>
+      <h2>About Me</h2>
+      <p> Hey there!
+        I’m Agnes, a final-year student at the Cape Peninsula University of Technology, majoring in Software Development and minoring in Data Science. I'm also an intern. I’m really passionate about Artificial Intelligence and how it can change the way we solve problems.
+        I love learning new things every day and applying them to real projects. It’s exciting to see how much I can grow and I’m looking forward to what comes next. Let’s build something awesome together.
+        </p>
+    </div>
+  </section>
+
+ <!-- Projects Section -->
+<section id="projects" class="projects-section" data-aos="fade-up" data-aos-delay="200">
+    <h2>My Projects</h2>
+
+    <div class="project-grid">
+
+              <!-- Banking App -->
+              <div class="project-card" data-aos="zoom-in" data-aos-delay="500">
+                <img src="./assets/images/Aegis_Bank.png" alt="Banking App">
+                <h3> Aegis Banking App - Under Developemnt</h3>
+                <p>The Banking App is a desktop application built with <strong>JavaFX</strong>. It provides users with the ability to manage their bank accounts, transfer money, view transaction history, and check balances. The app also includes security features such as user authentication and data encryption.</p>
+                <p><strong>Tech Stack:</strong> Java, JavaFX, MySQL, JDBC, CSS, FXML</p>
+                <button class="project-btn" onclick="openModal(3)">View on GitHub</button>
+            </div>
+
+                    <!-- Transformer-Based Chatbot -->
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="700">
+          <img src="./assets/images/Aegis_Chatbot.png" alt="Transformer-Based Chatbot">
+          <h3>Aegis Chatbot - Under Development</h3>
+          <p>The Transformer-Based Chatbot uses <strong>GPT-3</strong> and <strong>Transformer</strong> models to create a smart conversational AI. The bot can understand and respond to complex user queries in natural language. The app is built with <strong>Python</strong>, leveraging the <strong>Hugging Face</strong> library for NLP tasks.</p>
+          <p><strong>Tech Stack:</strong> Python, Hugging Face Transformers, <strong>Flask</strong> (for backend), <strong>TensorFlow</strong> or <strong>PyTorch</strong> (for deep learning models), JavaScript (for frontend)</p>
+          <button class="project-btn" onclick="openModal(5)">View on GitHub</button>
+      </div>
+
+              <!-- Social Media Dashboard -->
+              <div class="project-card" data-aos="zoom-in" data-aos-delay="600">
+                <img src="./assets/images/InSync.png" alt="Social Media Dashboard">
+                <h3>Social Media Dashboard - Under Development</h3>
+                <p>The Social Media Dashboard is a data visualization tool that aggregates social media metrics from multiple platforms like Twitter, Instagram, and Facebook. Users can track their performance metrics and view them in customizable charts and graphs. This app was built using <strong>JavaScript</strong> and <strong>React.js</strong>.</p>
+                <p><strong>Tech Stack:</strong> JavaScript, React.js, <strong>Chart.js</strong>, REST APIs (for data fetching), HTML5, CSS3</p>
+                <button class="project-btn" onclick="openModal(4)">View on Github</button>
+            </div>
+        
+          <!-- Portfolio Website -->
+              <div class="project-card" data-aos="zoom-in" data-aos-delay="500">
+                <img src="./assets/images/Aegis_Bank.png" alt="Portfolio">
+                <h3> Portfolio Website</h3>
+                <p>This App is a web application that you are currectly on. It my personal website where I can showcase my skills and projects.</p>
+                <p><strong>Tech Stack:</strong> JavaScript, HTML & CSS</p>
+                <button class="project-btn" onclick="openModal(3)">View on GitHub</button>
+            </div>
+
+        <!-- Pagine Bookstore -->
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+            <img src=".\assets\images\pagine.jpeg" alt="Pagine Bookstore">
+            <h3>Pagine Bookstore</h3>
+            <p>Pagine Bookstore is an online bookstore. The project allows users to browse, add, and purchase books from a digital storefront. It includes features like user authentication, order management, and payment integration. The website is designed to offer a seamless user experience and supports a variety of devices.</p>
+            <p><strong>Tech Stack:</strong> Boostrap, JavaScript, Flask, SQLite, HTML, CSS</p>
+            <button class="project-btn" onclick="openModal(1)">View Live Demo</button>
+        </div>
+
+        <!-- Safestreets Crime Reporting App -->
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
+            <img src=".\assets\images\safestreets.jpg" alt="Safestreets Crime Reporting App">
+            <h3>Safestreets Crime Reporting App</h3>
+            <p>This was a group project in 2nd year, I was the Tech Lead, Project Mananger and Backend Developer for this project.</p>
+            <p>Safestreets is a mobile app for crime reporting, multimedia upload, and location tracking. It allows users to report crimes in real-time, upload images and videos, and track crime data on a dashboard. The app includes features for interactive maps, data visualization, and an easy-to-use interface.</p>
+            <p><strong>Tech Stack:</strong> <strong>HTML, CSS, JavaScript</strong>,SQLite, Pandas, Matplotlib, <strong>Google Maps API</strong> &<strong>Flask.</strong></p>
+            <button class="project-btn" onclick="openModal(2)">View Live Demo</button>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section" data-aos="fade-up" data-aos-delay="800">
+    <h2>Skills</h2>
+    
+    <div class="skills-container">
+      <div class="skill">
+        <div class="skill-title">
+          <img src="https://img.icons8.com/ios/50/000000/java-coffee-cup-logo.png" alt="Java Icon" class="skill-icon">
+          JAVA
+        </div>
+        <div class="skill-bar" style="width: 90%"></div>
+      </div>
+  
+      <div class="skill">
+        <div class="skill-title">
+          <img src="https://img.icons8.com/ios/50/000000/python.png" alt="Python Icon" class="skill-icon">
+          PYTHON
+        </div>
+        <div class="skill-bar" style="width: 90%"></div>
+      </div>
+  
+      <div class="skill">
+        <div class="skill-title">
+          <img src="https://img.icons8.com/ios/50/000000/javascript.png" alt="JavaScript Icon" class="skill-icon">
+          JAVASCRIPT
+        </div>
+        <div class="skill-bar" style="width: 90%"></div>
+      </div>
+  
+      <div class="skill">
+        <div class="skill-title">
+          <img src="https://img.icons8.com/ios/50/000000/html-5.png" alt="HTML Icon" class="skill-icon">
+          HTML
+        </div>
+        <div class="skill-bar" style="width: 85%"></div>
+      </div>
+  
+      <div class="skill">
+        <div class="skill-title">
+          <img src="https://img.icons8.com/ios/50/000000/css3.png" alt="CSS Icon" class="skill-icon">
+          CSS
+        </div>
+        <div class="skill-bar" style="width: 80%"></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-title">
+          <img src="https://img.icons8.com/ios/50/000000/kotlin.png" alt="Kotlin Icon" class="skill-icon">
+          KOTLIN
+        </div>
+        <div class="skill-bar" style="width: 75%"></div>
+      </div>
+  
+      <div class="skill">
+        <div class="skill-title">
+          <img src="https://img.icons8.com/ios/50/000000/angularjs.png" alt="Angular Icon" class="skill-icon">
+          ANGULAR
+        </div>
+        <div class="skill-bar" style="width: 70%"></div>
+      </div>
+  
+      <div class="skill">
+        <div class="skill-title">
+          <img src="https://img.icons8.com/ios/50/000000/django.png" alt="Django Icon" class="skill-icon">
+          DJANGO
+        </div>
+        <div class="skill-bar" style="width: 80%"></div>
+      </div>
+  
+      <div class="skill">
+        <div class="skill-title">
+          <img src="https://img.icons8.com/ios/50/000000/flask.png" alt="Flask Icon" class="skill-icon">
+          FLASK
+        </div>
+        <div class="skill-bar" style="width: 75%"></div>
+      </div>
+
+    <div class="skill">
+        <div class="skill-title">
+          <img src="https://img.icons8.com/ios/50/000000/bootstrap.png" alt="Bootstrap Icon" class="skill-icon">
+          BOOTSTRAP
+        </div>
+        <div class="skill-bar" style="width: 80%"></div>
+      </div>
+
+      <div class="skill">
+        <img src="https://img.icons8.com/ios-filled/50/000000/mysql.png" alt="MySQL" class="skill-icon">
+        <div class="skill-title">MySQL</div>
+        <div class="skill-bar" style="width: 85%"></div>
+      </div>
+
+      <div class="skill">
+        <img src="https://img.icons8.com/ios-filled/50/000000/sqlite.png" alt="SQLite" class="skill-icon">
+        <div class="skill-title">SQLite</div>
+        <div class="skill-bar" style="width: 75%"></div>
+      </div>
+
+      <div class="skill">
+        <img src="https://img.icons8.com/ios-filled/50/000000/figma.png" alt="Figma" class="skill-icon">
+        <div class="skill-title">Figma</div>
+        <div class="skill-bar" style="width: 70%"></div>
+      </div>
+
+      <div class="skill">
+        <i class="fab fa-git skill-icon"></i>
+        <div class="skill-title">Git</div>
+        <div class="skill-bar" style="width: 90%"></div>
+      </div>
+      
+    <div class="skill">
+        <i class="fab fa-github skill-icon"></i>
+        <div class="skill-title">GitHub</div>
+        <div class="skill-bar" style="width: 90%"></div>
+      </div>
+
+    <div class="skill">
+      <i class="fab fa-docker skill-icon"></i>
+      <div class="skill-title">Docker</div>
+      <div class="skill-bar" style="width: 80%"></div>
+    </div>
+
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section" data-aos="fade-up" data-aos-delay="900">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Floating Action Button -->
+  <div class="floating-btn">
+    <img src="./assets/images/me.jpg"" alt="Your Image" class="floating-image">
+    <a href="#contact" class="btn"><i class="fas fa-envelope"></i> Contact Me</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 M.A Mabusela. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+   // Initialize AOS
+    AOS.init({
+      duration: 1000,  
+      offset: 100,
+      once: true,
+    });
+ </script>
+</body>
+</html>

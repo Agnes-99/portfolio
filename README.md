@@ -62,22 +62,22 @@ portfolio-website/
 ## 📸 Screenshots
 
 ### Home Page  
-![Home Page](<./assets/images/screenshots/home-page.png>)
+![Home Page](./assets/images/screenshots/home-page.png)
 
 ### About Me  
-![About Me](<./assets/images/screenshots/about-me.png>)
+![About Me](./assets/images/screenshots/about-me.png)
 
 ### Projects  
-![Projects](<./assets/images/screenshots/projects.png>)
+![Projects](./assets/images/screenshots/projects.png)
 
 ### Skills  
-![Skills](<./assets/images/screenshots/skills.png>)
+![Skills](./assets/images/screenshots/skills.png)
 
 ### Contact  
-![Contact](<./assets/images/screenshots/contact.png>)
+![Contact](./assets/images/screenshots/contact.png)
 
 ### Blog Section (Coming Soon!)  
-![Blog](<./assets/images/screenshots/blog-coming-soon.png>)
+![Blog](./assets/images/screenshots/blog-coming-soon.png)
 
 ---
 

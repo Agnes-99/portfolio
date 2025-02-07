@@ -69,7 +69,8 @@ portfolio-website/
 
 ### Projects  
 ![Projects](./assets/images/screenshots/projects_1.png)
-![Projects](./assets/images/screenshots/projects_2.png)
+
+![Projectss](./assets/images/screenshots/projects_2.png)
 
 ### Skills  
 ![Skills](./assets/images/screenshots/skills.png)

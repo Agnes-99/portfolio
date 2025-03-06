@@ -16,7 +16,6 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
     const modal = document.getElementById('projectModal');
     const modalContent = modal.querySelector('.modal-content');
     
-    // Here you can dynamically load the project details into the modal (this is an example)
     switch (projectId) {
       case 1:
         modalContent.querySelector('h2').innerText = 'Pagine Bookstore';

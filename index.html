@@ -15,7 +15,7 @@
   <!-- FontAwesome Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
     
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
-      <li><a href="#blog">Blog</a></li>
+      <li><a href="blog.html">blog</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -64,8 +64,12 @@
       <h1><img src=".\assets\images\memoji.jpg" alt="Memoji" class="memoji"></h1>
       <h2>About Me</h2>
       <p> Hey there!
-        I’m Agnes, a final-year student at the Cape Peninsula University of Technology, majoring in Software Development and minoring in Data Science. I'm also an intern. I’m really passionate about Artificial Intelligence and how it can change the way we solve problems.
-        I love learning new things every day and applying them to real projects. It’s exciting to see how much I can grow and I’m looking forward to what comes next. Let’s build something awesome together.
+        I'm Agnes, a final-year Software Development student at Cape Peninsula University of Technology, with a keen interest in Artificial Intelligence. While my major is Software Development, I’m taking Machine Learning as an elective and gaining hands-on experience as an intern.
+
+        I love learning and applying new concepts to real-world projects—there’s something exciting about seeing ideas come to life through code. AI, in particular, fascinates me because of its potential to transform problem-solving in innovative ways.
+        
+        Let’s build something awesome together!
+        
         </p>
     </div>
   </section>
@@ -113,6 +117,16 @@
               <button class="project-btn" onclick="window.location.href='https://github.com/Agnes-99/Safestreets-App'">View on GitHub</button>
           </div>
 
+            <!-- FindMe AI App -->
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="500">
+              <img src="./assets/images/FindMe_AI.png" alt="FindMe AI App">
+              <h3>FindMe AI - Under Development</h3>
+              <p>
+                FindMe AI is a mobile application built with <strong>React Native</strong> that uses facial recognition technology to help locate missing people. The app scans public cameras and social media platforms to find potential matches, assisting authorities and families in reconnecting with their loved ones.
+              </p>
+              <p><strong>Tech Stack:</strong> React Native, AI/ML, OpenCV, Firebase, JavaScript</p>
+              <button class="project-btn" onclick="openModal(3)">View on GitHub</button>
+            </div>
 
               <!-- Banking App -->
               <div class="project-card" data-aos="zoom-in" data-aos-delay="500">

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - My Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/blog.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  
+  <!-- FontAwesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> 
+  
+  <script src="./js/blog.js"></script> 
+  <script src="./js/form.js"></script> 
+  <script src="./js/script.js"></script> 
+</head>
+<body>
+  <!-- Navigation -->
+
+  <nav id="navbar">
+    <div class="logo">Agnes Mabusela</div>
+    
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="blog.html">blog</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="path/to/your-cv.pdf" download class="download-btn">Download My CV</a></li>
+    </ul>
+
+    <div class="social-links">
+        <a href="mailto:agnesmabusela12@gmail.com" target="_blank" class="social-icon">
+            <i class="fas fa-envelope"></i>
+          </a> 
+        <a href="https://www.linkedin.com/in/agnes-mabusela-29bb79288/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Agnes-99" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>         
+    </div>
+  </nav>
+
+
+  <section id="blog">
+    <h1>My Blog</h1>
+    
+    <!-- Category Buttons -->
+    <div class="category-buttons">
+      <button onclick="filterPosts('web-dev')">Web Development</button>
+      <button onclick="filterPosts('machine-learning')">Machine Learning</button>
+      <button onclick="filterPosts('desktop-apps')">Desktop Apps</button>
+      <button onclick="filterPosts('mobile-apps')">Mobile Apps</button>
+    </div>
+    
+    <!-- Blog Post List -->
+    <div class="blog-list">
+      <article class="blog-post web-dev" onclick="openBlogModal(1)">
+        <h2>My First Achievement in Web Development</h2>
+        <p class="excerpt">This is a short preview of the post. Click to read more...</p>
+        <span class="date">Published on February 11, 2025</span>
+      </article>
+  
+      <article class="blog-post web-dev" onclick="openBlogModal(2)">
+        <h2>Things I Learned from Building My Portfolio</h2>
+        <p class="excerpt">A brief look at the key things I've learned while building this portfolio project...</p>
+        <span class="date">Published on February 10, 2025</span>
+      </article>
+  
+      <article class="blog-post machine-learning" onclick="openBlogModal(3)">
+        <h2>Exploring Neural Networks: A Beginner's Guide</h2>
+        <p class="excerpt">A deep dive into the world of neural networks and how they work...</p>
+        <span class="date">Published on February 5, 2025</span>
+      </article>
+  
+      <article class="blog-post machine-learning" onclick="openBlogModal(4)">
+        <h2>Building a Machine Learning Model with Python</h2>
+        <p class="excerpt">Step-by-step guide to building your first machine learning model...</p>
+        <span class="date">Published on January 20, 2025</span>
+      </article>
+  
+      <article class="blog-post desktop-apps" onclick="openBlogModal(5)">
+        <h2>Creating a Simple Banking App with JavaFX</h2>
+        <p class="excerpt">Learn how to create a desktop banking application using JavaFX...</p>
+        <span class="date">Published on February 1, 2025</span>
+      </article>
+  
+      <article class="blog-post mobile-apps" onclick="openBlogModal(6)">
+        <h2>Building a Mobile Todo App with React Native</h2>
+        <p class="excerpt">Learn how to create a simple mobile todo list app using React Native...</p>
+        <span class="date">Published on January 18, 2025</span>
+      </article>
+  
+      <article class="blog-post mobile-apps" onclick="openBlogModal(7)">
+        <h2>Best Practices for Mobile App Development</h2>
+        <p class="excerpt">Key tips and practices to follow when developing mobile apps...</p>
+        <span class="date">Published on December 30, 2024</span>
+      </article>
+    </div>
+  </section>
+  
+  <div id="blogModal" class="modal">
+    <div class="modal-content">
+      <span onclick="closeBlogModal()" class="close-button">&times;</span>
+      <h2 id="modalPostTitle"></h2>
+      <p id="modalPostContent"></p>
+    </div>
+  </div>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section" data-aos="fade-up" data-aos-delay="900">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+  
+</body>
+</html>

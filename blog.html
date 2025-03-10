@@ -22,19 +22,19 @@
   <script src="./js/script.js"></script> 
 </head>
 <body>
-  <!-- Navigation -->
-
+  
   <nav id="navbar">
     <div class="logo">Agnes Mabusela</div>
     
+    <div class="hamburger-menu" id="hamburger-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+   
     <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="blog.html">blog</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="path/to/your-cv.pdf" download class="download-btn">Download My CV</a></li>
+      <li><a href="./assets/pdf/Madikila_Agnes_Mabusela_CV.pdf" download class="download-btn">Download My CV</a></li>
     </ul>
 
     <div class="social-links">
@@ -49,7 +49,6 @@
         </a>         
     </div>
   </nav>
-
 
   <section id="blog">
     <h1>My Blog</h1>
@@ -107,6 +106,51 @@
       </article>
     </div>
   </section>
+
+  <section class="blog-images" data-aos="fade-up" data-aos-delay="300">
+    <h2>My Journey in Tech</h2>
+    <p>Here are a few highlights from my journey in the tech world, showcasing some key events, projects, and moments of growth. Each experience has shaped my perspective on how technology is transforming industries and our daily lives.</p>
+  
+      <!-- Image Gallery -->
+      <div class="image-gallery">
+        <div class="gallery-item">
+          <img src="./assets/images/techSnapshots/googleEvent2024.jpg" alt="At a Google Event" class="gallery-image">
+          <p class="image-description">
+            At a recent Google event, I delved deep into cutting-edge technologies such as AI-driven industrial optimization, JAX for high-performance machine learning, and Google Cloud's latest innovations. I also explored the emerging role of AI agents and how they're revolutionizing automation across industries. It was a powerful learning experience that reinforced the importance of AI in shaping the future.
+          </p>
+        </div>
+    
+        <div class="gallery-item">
+          <img src="./assets/images/techSnapshots/digitalArt1.jpg" alt="Digital Art Piece 2" class="gallery-image">
+          <p class="image-description">
+            This digital art piece represents a collaborative project I worked on with an innovative digital art company. As an influencer in the NFT space, I had the privilege of helping to promote exclusive digital art pieces sold on OpenSea. This project allowed me to explore the intersection of technology, creativity, and blockchain—truly a dynamic space to be part of.
+          </p>
+        </div>
+    
+        <div class="gallery-item">
+          <img src="./assets/images/techSnapshots/CPUT_figma.jpg" alt="CPUT App Design Snapshot" class="gallery-image">
+          <p class="image-description">
+            Alongside my team, I helped design an intuitive app for the Cape Peninsula University of Technology (CPUT) using Figma. The focus was on creating a seamless user experience for students, combining functionality with an aesthetically pleasing design. It was a rewarding project that sharpened my skills in user-centric design.
+          </p>
+        </div>
+    
+        <div class="gallery-item">
+          <img src="./assets/images/techSnapshots/amazonRobot.jpg" alt="Amazon Cloud and Robotics" class="gallery-image">
+          <p class="image-description">
+            I had the chance to dive into Amazon's cloud technologies and explore their cutting-edge work in robotics. Gaining hands-on experience with these tools provided me with a deeper understanding of how cloud computing is intertwined with robotics, and the potential this combination holds for automating industries in the future.
+          </p>
+        </div>
+    
+        <!-- New gallery item for the book -->
+        <div class="gallery-item">
+          <img src="./assets/images/techSnapshots/nexus_book.jpg" alt="Nexus: From the Stone Age to AI" class="gallery-image">
+          <p class="image-description">
+            One of the books that has been shaping my understanding of AI and its historical context is *Nexus: From the Stone Age to AI*. This thought-provoking read explores the evolution of intelligence, both human and artificial, and offers a compelling perspective on the future of AI. It's been an essential resource in deepening my insights into the broader journey of human and technological evolution.
+          </p>
+        </div>
+      </div>
+    </section>
+    
   
   <div id="blogModal" class="modal">
     <div class="modal-content">
@@ -116,17 +160,41 @@
     </div>
   </div>
 
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section" data-aos="fade-up" data-aos-delay="900">
+  <section id="contact" class="contact-section" data-aos="fade-up" data-aos-delay="800">
     <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
+    <form name="contact" method="POST"  data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="text" placeholder="Your Name" name="name" required>
+      <input type="hidden" name="_subject" value="New Message from Your Portfolio">
+      <input type="email" placeholder="Your Email" name="email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit" class="btn">Send Message</button>
     </form>
   </section>
-  
+
+ 
+  <footer>
+    <p>&copy; 2025 M.A Mabusela. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+   // Initialize AOS
+    AOS.init({
+      duration: 1000,  
+      offset: 100,
+      once: true,
+    });
+ </script>
+
+<script>
+  const hamburgerMenu = document.getElementById("hamburger-menu");
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburgerMenu.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+  });
+</script>
+
 </body>
 </html>

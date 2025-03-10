@@ -6,24 +6,22 @@
   <meta name="description" content="Portfolio website showcasing my work">
   <title> Agnes Mabusela | Portfolio</title>
   
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  
-  <!-- AOS Animations -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-  
-  <!-- FontAwesome Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-  
+ 
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-  <!-- Navigation -->
   <nav id="navbar">
     <div class="logo">Agnes Mabusela</div>
     
+    <div class="hamburger-menu" id="hamburger-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+   
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="blog.html">blog</a></li>
@@ -31,7 +29,7 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="path/to/your-cv.pdf" download class="download-btn">Download My CV</a></li>
+      <li><a href="./assets/pdf/Madikila_Agnes_Mabusela_CV.pdf" download class="download-btn">Download My CV</a></li>
     </ul>
 
     <div class="social-links">
@@ -47,7 +45,7 @@
     </div>
   </nav>
 
-  <!-- Home Section -->
+
   <section id="home" class="home-section" data-aos="fade-in">
     <div class ="particles-container"></div>
     <div class="intro-text">
@@ -58,7 +56,7 @@
     </div>
   </section>
   
-  <!-- About Section -->
+
   <section id="about" class="about-section" data-aos="fade-up" data-aos-delay="100">
     <div class="container">
       <h1><img src=".\assets\images\memoji.jpg" alt="Memoji" class="memoji"></h1>
@@ -74,13 +72,22 @@
     </div>
   </section>
 
- <!-- Projects Section -->
+
 <section id="projects" class="projects-section" data-aos="fade-up" data-aos-delay="200">
     <h2>My Projects</h2>
 
     <div class="project-grid">
 
-              <!-- Code Editor -->
+
+                  <div class="project-card" data-aos="zoom-in" data-aos-delay="700">
+                    <img src="./assets/images/Energym.png" alt="Transformer-Based Fitness Chatbot">
+                    <h3>Energym Fitness Bot - Under Development</h3>
+                    <p>The <strong>Energym Fitness Bot</strong> leverages <strong>GPT-3</strong> and cutting-edge <strong>Transformer</strong> models to offer a smart, conversational AI that understands and responds to complex fitness-related queries. Powered by <strong>Python</strong> and the <strong>Hugging Face</strong> library, this chatbot provides tailored fitness advice, workout suggestions, and more.</p>
+                    <p><strong>Tech Stack:</strong>Python, Hugging Face Transformers, <strong>Flask</strong> (backend), <strong>TensorFlow</strong> or <strong>PyTorch</strong> (deep learning models), React Native (frontend)</p>
+                    <button class="project-btn" onclick="openModal(5)">View on GitHub</button>
+                  </div>
+
+
               <div class="project-card" data-aos="zoom-in" data-aos-delay="500">
                 <img src="./assets/images/AegisCode.jpg" alt="Code Editor">
                 <h3>Online Code Editor</h3>
@@ -89,7 +96,7 @@
                 <button class="project-btn" onclick="window.location.href='https://github.com/Agnes-99/Online-Code-Editor'">View on GitHub</button>
               </div>
 
-               <!-- Portfolio Website -->
+
                <div class="project-card" data-aos="zoom-in" data-aos-delay="500">
                 <img src="./assets/images/Portfolio.jpg" alt="Portfolio">
                 <h3> Portfolio Website</h3>
@@ -98,26 +105,7 @@
                 <button class="project-btn" onclick="window.location.href='https://github.com/Agnes-99/portfolio'">View on GitHub</button>
               </div>
 
-              <!-- Pagine Bookstore -->
-            <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
-              <img src=".\assets\images\pagine.jpeg" alt="Pagine Bookstore">
-              <h3>Pagine Bookstore</h3>
-              <p>Pagine Bookstore is an online bookstore. The project allows users to browse, add, and purchase books from a digital storefront. It includes features like user authentication, order management, and payment integration. The website is designed to offer a seamless user experience and supports a variety of devices.</p>
-              <p><strong>Tech Stack:</strong> Boostrap, JavaScript, Flask, SQLite, HTML, CSS</p>
-              <button class="project-btn" onclick="window.location.href='https://github.com/Agnes-99/Pagine-Bookstore'">View on GitHub</button>
-            </div>
-
-             <!-- Safestreets Crime Reporting App -->
-             <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
-              <img src=".\assets\images\safestreets.jpg" alt="Safestreets Crime Reporting App">
-              <h3>Safestreets Crime Reporting App</h3>
-              <p>This was a group project in 2nd year, I was the Tech Lead, Project Mananger and Backend Developer for this project.</p>
-              <p>Safestreets is a mobile app for crime reporting, multimedia upload, and location tracking. It allows users to report crimes in real-time, upload images and videos, and track crime data on a dashboard. The app includes features for interactive maps, data visualization, and an easy-to-use interface.</p>
-              <p><strong>Tech Stack:</strong> <strong>HTML, CSS, JavaScript</strong>,SQLite, Pandas, Matplotlib, <strong>Google Maps API</strong> &<strong>Flask.</strong></p>
-              <button class="project-btn" onclick="window.location.href='https://github.com/Agnes-99/Safestreets-App'">View on GitHub</button>
-          </div>
-
-            <!-- FindMe AI App -->
+              
             <div class="project-card" data-aos="zoom-in" data-aos-delay="500">
               <img src="./assets/images/FindMe_AI.png" alt="FindMe AI App">
               <h3>FindMe AI - Under Development</h3>
@@ -128,7 +116,24 @@
               <button class="project-btn" onclick="openModal(3)">View on GitHub</button>
             </div>
 
-              <!-- Banking App -->
+
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+              <img src=".\assets\images\pagine.jpeg" alt="Pagine Bookstore">
+              <h3>Pagine Bookstore</h3>
+              <p>Pagine Bookstore is an online bookstore. The project allows users to browse, add, and purchase books from a digital storefront. It includes features like user authentication, order management, and payment integration. The website is designed to offer a seamless user experience and supports a variety of devices.</p>
+              <p><strong>Tech Stack:</strong> Boostrap, JavaScript, Flask, SQLite, HTML, CSS</p>
+              <button class="project-btn" onclick="window.location.href='https://github.com/Agnes-99/Pagine-Bookstore'">View on GitHub</button>
+            </div>
+
+             <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
+              <img src=".\assets\images\safestreets.jpg" alt="Safestreets Crime Reporting App">
+              <h3>Safestreets Crime Reporting App</h3>
+              <p>This was a group project in 2nd year, I was the Tech Lead, Project Mananger and Backend Developer for this project.</p>
+              <p>Safestreets is a mobile app for crime reporting, multimedia upload, and location tracking. It allows users to report crimes in real-time, upload images and videos, and track crime data on a dashboard. The app includes features for interactive maps, data visualization, and an easy-to-use interface.</p>
+              <p><strong>Tech Stack:</strong> <strong>HTML, CSS, JavaScript</strong>,SQLite, Pandas, Matplotlib, <strong>Google Maps API</strong> &<strong>Flask.</strong></p>
+              <button class="project-btn" onclick="window.location.href='https://github.com/Agnes-99/Safestreets-App'">View on GitHub</button>
+          </div>
+
               <div class="project-card" data-aos="zoom-in" data-aos-delay="500">
                 <img src="./assets/images/Aegis_Bank.png" alt="Banking App">
                 <h3> Aegis Banking App - Under Developemnt</h3>
@@ -137,16 +142,6 @@
                 <button class="project-btn" onclick="openModal(3)">View on GitHub</button>
               </div>
 
-            <!-- Transformer-Based Chatbot -->
-              <div class="project-card" data-aos="zoom-in" data-aos-delay="700">
-                <img src="./assets/images/Aegis_Chatbot.png" alt="Transformer-Based Chatbot">
-                <h3>Aegis Chatbot - Under Development</h3>
-                <p>The Transformer-Based Chatbot uses <strong>GPT-3</strong> and <strong>Transformer</strong> models to create a smart conversational AI. The bot can understand and respond to complex user queries in natural language. The app is built with <strong>Python</strong>, leveraging the <strong>Hugging Face</strong> library for NLP tasks.</p>
-                <p><strong>Tech Stack:</strong> Python, Hugging Face Transformers, <strong>Flask</strong> (for backend), <strong>TensorFlow</strong> or <strong>PyTorch</strong> (for deep learning models), JavaScript (for frontend)</p>
-                <button class="project-btn" onclick="openModal(5)">View on GitHub</button>
-              </div>
-
-              <!-- Social Media Dashboard -->
               <div class="project-card" data-aos="zoom-in" data-aos-delay="600">
                 <img src="./assets/images/InSync.png" alt="Social Media Dashboard">
                 <h3>Social Media Dashboard - Under Development</h3>
@@ -158,7 +153,6 @@
     </div>
 </section>
 
-<!-- Skills Section -->
 <section id="skills" class="skills-section" data-aos="fade-up" data-aos-delay="800">
     <h2>Skills</h2>
     
@@ -352,24 +346,26 @@
   </section>
   
 
-  <!-- Contact Section -->
   <section id="contact" class="contact-section" data-aos="fade-up" data-aos-delay="900">
     <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
+    <form name="contact" method="POST"  data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="text" placeholder="Your Name" name="name" required>
+      <input type="hidden" name="_subject" value="New Message from Your Portfolio">
+      <input type="email" placeholder="Your Email" name="email" required>
       <textarea placeholder="Your Message" required></textarea>
       <button type="submit" class="btn">Send Message</button>
     </form>
+    <meta http-equiv="refresh" content="3;url=/thank-you" />
   </section>
 
-  <!-- Floating Action Button -->
+
   <div class="floating-btn">
     <img src="./assets/images/me.jpg"" alt="Your Image" class="floating-image">
     <a href="#contact" class="btn"><i class="fas fa-envelope"></i> Contact Me</a>
   </div>
 
-  <!-- Footer -->
+ 
   <footer>
     <p>&copy; 2025 M.A Mabusela. All Rights Reserved.</p>
   </footer>
@@ -383,5 +379,17 @@
       once: true,
     });
  </script>
+
+<script>
+  // Select the hamburger icon and navigation links
+  const hamburgerMenu = document.getElementById("hamburger-menu");
+  const navLinks = document.getElementById("nav-links");
+
+  // Add click event listener to toggle the 'active' class
+  hamburgerMenu.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+  });
+</script>
+
 </body>
 </html>

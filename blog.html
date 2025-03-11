@@ -6,17 +6,10 @@
   <title>Blog - My Portfolio</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/blog.css">
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  
-  <!-- AOS Animations -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-  
-  <!-- FontAwesome Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-  
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> 
-  
   <script src="./js/blog.js"></script> 
   <script src="./js/form.js"></script> 
   <script src="./js/script.js"></script> 
@@ -34,9 +27,9 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="blog.html">blog</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
       <li><a href="./assets/pdf/Madikila_Agnes_Mabusela_CV.pdf" download class="download-btn">Download My CV</a></li>
     </ul>
 
@@ -56,7 +49,6 @@
   <section id="blog">
     <h1>My Blog</h1>
     
-    <!-- Category Buttons -->
     <div class="category-buttons">
       <button onclick="filterPosts('web-dev')">Web Development</button>
       <button onclick="filterPosts('machine-learning')">Machine Learning</button>
@@ -64,7 +56,6 @@
       <button onclick="filterPosts('mobile-apps')">Mobile Apps</button>
     </div>
     
-    <!-- Blog Post List -->
     <div class="blog-list">
       <article class="blog-post web-dev" onclick="openBlogModal(1)">
         <h2>My First Achievement in Web Development</h2>
@@ -113,8 +104,7 @@
   <section class="blog-images" data-aos="fade-up" data-aos-delay="300">
     <h2>My Journey in Tech</h2>
     <p>Here are a few highlights from my journey in the tech world, showcasing some key events, projects, and moments of growth. Each experience has shaped my perspective on how technology is transforming industries and our daily lives.</p>
-  
-      <!-- Image Gallery -->
+
       <div class="image-gallery">
         <div class="gallery-item">
           <img src="./assets/images/techSnapshots/googleEvent2024.jpg" alt="At a Google Event" class="gallery-image">
@@ -144,7 +134,6 @@
           </p>
         </div>
     
-        <!-- New gallery item for the book -->
         <div class="gallery-item">
           <img src="./assets/images/techSnapshots/nexus_book.jpg" alt="Nexus: From the Stone Age to AI" class="gallery-image">
           <p class="image-description">
@@ -163,8 +152,6 @@
     </div>
   </div>
 
-
- 
   <section id="contact" class="contact-section" data-aos="fade-up" data-aos-delay="800">
     <h2>Contact Me</h2>
     <form name="contact" method="POST"  data-netlify="true" netlify-honeypot="bot-field">
@@ -184,7 +171,6 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-   // Initialize AOS
     AOS.init({
       duration: 1000,  
       offset: 100,

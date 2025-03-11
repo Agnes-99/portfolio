@@ -1,19 +1,17 @@
-// Function to filter blog posts by category
+
 function filterPosts(category) {
     const allPosts = document.querySelectorAll('.blog-post');
     
     allPosts.forEach(post => {
       if (post.classList.contains(category) || category === "all") {
-        post.style.display = 'block'; // Show post
+        post.style.display = 'block'; 
       } else {
-        post.style.display = 'none'; // Hide post
+        post.style.display = 'none'; 
       }
     });
   }
   
-  // Example of opening a modal for blog posts
   function openBlogModal(postId) {
     alert("Opening blog post with ID: " + postId);
-    // Implement modal logic here
   }
   
